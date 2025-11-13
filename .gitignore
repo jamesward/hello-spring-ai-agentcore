@@ -39,3 +39,5 @@ out/
 ### Kotlin ###
 .kotlin
 /infra/.venv/
+/infra/__pycache__/
+/infra/cdk.out/
