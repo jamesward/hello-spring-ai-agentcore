@@ -8,11 +8,11 @@ Run Locally:
 3. Run the app: `./gradlew bootRun`
 
 Run on AgentCore:
-1. Install Node
-2. Install `uv`
-3. Deploy the agent:
-    ```
-    cd infra
-    npx aws-cdk bootstrap
-    npx aws-cdk deploy
-    ```
+
+1. Tell your AI agent:
+   ```
+   Set up Agent Toolkit for AWS by following instructions:
+   https://raw.githubusercontent.com/aws/agent-toolkit-for-aws/refs/heads/main/setup-instructions/setup.md
+   
+   Deploy this agent on AgentCore Runtime
+   ```

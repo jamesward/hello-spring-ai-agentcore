@@ -1,17 +1,15 @@
 package com.example.demo;
 
+import org.springaicommunity.agentcore.annotation.AgentCoreInvocation;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 
 @SpringBootApplication
-@RestController
-class DemoApplication {
+public class DemoApplication {
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
     }
 
@@ -21,12 +19,9 @@ class DemoApplication {
         chatClient = chatClientBuilder.build();
     }
 
-    @PostMapping("/invocations")
+    @AgentCoreInvocation
     public String myAgent() {
-        return chatClient
-            .prompt("tell me a joke")
-            .call()
-            .content();
+        return chatClient.prompt("tell me a joke").call().content();
     }
 
 }

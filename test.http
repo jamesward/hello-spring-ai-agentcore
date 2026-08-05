@@ -1,6 +1,4 @@
 POST http://localhost:8080/invocations
 Content-Type: application/json
 
-{
-  "question": "tell me a joke"
-}
+{ }
