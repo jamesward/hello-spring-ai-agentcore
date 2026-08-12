@@ -4,6 +4,12 @@ plugins {
     id("io.spring.dependency-management") version "1.1.7"
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
 dependencies {
     implementation(platform("org.springframework.ai:spring-ai-bom:2.0.0"))
     implementation(platform("org.springaicommunity:spring-ai-agentcore-bom:2.1.0"))
