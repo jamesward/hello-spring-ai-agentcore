@@ -20,7 +20,7 @@ dependencies {
 
 // Agent Skills, extracted with ./gradlew extractSkillsJars
 dependencies {
-    skill("com.jamesward:skills:0.0.12")
+    skill("com.jamesward:skills:0.0.15")
 }
 
 skillsjars {
