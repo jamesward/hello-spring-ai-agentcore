@@ -1,7 +1,7 @@
 plugins {
     id("com.skillsjars.gradle-plugin") version "0.2.0"
     java
-    id("org.springframework.boot") version "4.1.2"
+    id("org.springframework.boot") version "4.2.0"
     id("io.spring.dependency-management") version "1.1.7"
 }
 
@@ -12,7 +12,7 @@ java {
 }
 
 dependencies {
-    implementation(platform("org.springframework.ai:spring-ai-bom:2.0.2"))
+    implementation(platform("org.springframework.ai:spring-ai-bom:2.1.0"))
     implementation(platform("org.springaicommunity:spring-ai-agentcore-bom:2.3.0"))
     implementation("org.springframework.ai:spring-ai-starter-model-bedrock-converse")
     implementation("org.springaicommunity:spring-ai-agentcore-runtime-starter")
